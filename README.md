@@ -19,7 +19,7 @@ After all agents taking actions, the current LOB, including bid side and buy sid
 ## LOB_Execute.py
 This is the core script which connects RL algorithms with the output of LOB market. In this script I achieved an online critic learning with two kinds of advantage calculation:
 - Direct update: Advantage = reward - V_T
-- Q-learning: Advantage = reward + gamma*V_T+1 - V_T
+- Sarsa: Advantage = reward + gamma*V_T+1 - V_T
 ## LOB_Execute_DQN.py
 Different from LOB_Execute.py, I achieved DQN with a network structure with three kinds of input:
 - Recent market price series: a time-series data containing market short time-trend information.
