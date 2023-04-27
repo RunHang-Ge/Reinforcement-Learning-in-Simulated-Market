@@ -21,10 +21,10 @@ This is the core script which connects RL algorithms with the output of LOB mark
 - Direct update: Advantage = reward - V_T
 - Q-learning: Advantage = reward + gamma*V_T+1 - V_T
 ## LOB_Execute_DQN.py
-Different from LOB_Execute.py, I achieved DQN with a network structure with four kinds of input:
+Different from LOB_Execute.py, I achieved DQN with a network structure with three kinds of input:
 - Recent market price series: a time-series data containing market short time-trend information.
 - LOB data: LOB buy and bid order data containing current market information.
 - Agent feature: current status of RL agents itself.
 ## LOB_Exxcute_PPO.py
-Similar to LOB_Execute_DQN.py, I applied Proximal Policy Optimization algorithm without changing the whole network structure.
+Different from LOB_Execute_DQN.py, I added the policy network, changing it to an actor-critic algorithm, and applied Proximal Policy Optimization algorithm by changing update procedure and objective functions.
 ![image](https://github.com/RunHang-Ge/Reinforcement-Learning-in-Simulated-Market/blob/main/Network%20structure.png)
