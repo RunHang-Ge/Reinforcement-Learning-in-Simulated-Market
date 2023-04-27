@@ -27,3 +27,4 @@ Different from LOB_Execute.py, I achieved DQN with a network structure with four
 - Agent feature: current status of RL agents itself.
 ## LOB_Exxcute_PPO.py
 Similar to LOB_Execute_DQN.py, I applied Proximal Policy Optimization algorithm without changing the whole network structure.
+![image](https://github.com/RunHang-Ge/Reinforcement-Learning-in-Simulated-Market/blob/main/Network%20structure.png)
